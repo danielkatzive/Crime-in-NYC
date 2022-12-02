@@ -19,27 +19,37 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
-    font-size: 16px;background-color: #FAfBD7;
+    font-size: 16px;background-color: #FAfBD7; width: 100%;
 }
-img {display: block;  margin: 0 auto;}
-figure{display: block; margin 0 auto}
-.chart {display: block; width: 100%; margin: 0 auto;}
-
+img {display: block;  width: 75%; HEIGHT: 80%; margin: 0 AUTO;}
+figure{display: block; WIDTH: 75%; HEIGHT: 80%; margin: 0 auto; text-align: center;}
+figcaption{display: block; width 75%; margin: 0 auto; text-align: left;font-size: 9px;}
+.chart {display: block; width: 100%; margin: 0 auto; }
+p{text-align: justify;}
 .container {display: block;
-  max-width: 800px;
+  width: 75%;
 margin: 0 auto;
 }
+h1{display: block;text-align: left;}
+h2{display: block;text-align: LEFT;}
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
-@media(min-width: 681px) {
+@media(min-width: 681px)*/ {
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
 img {max-width: 1200px;}
 .chart {max-width: 1200px;
 }
+}*/
+{
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+.flex {display:flex; justify-content: space-between;padding-bottom: 10px;}
+.flex > div{
+  flex-basis: 40%; padding: 10px;
 }
-
+}
 
 /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
